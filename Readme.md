@@ -1,4 +1,6 @@
+```
 docker-compose -f docker-compose-kafka.yaml up --build -d
+
 docker-compose -f docker-compose-cluster.yaml up --build -d
 
 docker exec -it <CONTAINER ID> bash
@@ -53,6 +55,6 @@ kafka-consumer-groups.sh --bootstrap-server localhost:9092 --delete --group <CON
 kafka-metadata-quorum.sh --bootstrap-server localhost:9092 describe --status
 kafka-dump-log.sh --cluster-metadata-decoder --files <PATH_TO_LOG>
 
-
+```
 //link
 https://github.com/bitnami/containers/blob/main/bitnami/kafka/README.md
